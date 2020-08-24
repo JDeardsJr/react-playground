@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# react-playground
+
+This is an everchanging project to learn/practice React skills
+
 ## Available Scripts
 
 In the project directory, you can run:
