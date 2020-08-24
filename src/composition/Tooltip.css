@@ -1,0 +1,47 @@
+.Tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.Tooltip-message {
+    background-color: hsla(0, 0%, 10%, 0.9);
+    border-radius: 3px;
+    color: #fff;
+    left: 4vw;
+     margin-bottom: 5px;
+    margin-left: -8vw;
+    min-width: 160px;
+    padding: 7px 10px;
+    position: absolute;
+    text-align: center;
+    top: calc(-1.2em - 14px);
+    white-space: nowrap;
+}
+
+/* triangle */
+.Tooltip-message:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    content: " ";
+    font-size: 0;
+    left: 6vw;
+    line-height: 0;
+    margin-left: -5px;
+    position: absolute;
+    top: calc(18px + 14px);
+    width: 0;
+}
+
+/* start hidden */
+.Tooltip-message {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* show on hover*/
+.Tooltip:hover > .Tooltip-message {
+    opacity: 1;
+    visibility: visible;
+}
